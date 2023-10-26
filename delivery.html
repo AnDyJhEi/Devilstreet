@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Delivery</title>
+    <link rel="stylesheet" href="delivery.css">
+</head>
+<body>
+
+    <header>
+        <img src="img/delivery cabecera.jpeg" alt="Cabecera de entrega">
+        <h1>Delivery</h1>
+    </header>
+
+    <div class="header-content">
+        <img src="img/logo.png" alt="Logo pequeño">
+        <a href="index.html" class="button">Prendas</a>
+    </div>
+
+    <h1 class="centered-phrase">¡Tu delivery lo llevamos volando!</h1>
+    <p class="sub-phrase">Vístete a la moda como un Artista</p><br>
+    <h2 class="rectangle-title">Ingresa tu dirección</h2>
+    <div class="rectangle">
+        <div class="input-container">
+            <input type="text" id="provincia" class="input-box" placeholder="Provincia">
+        </div>
+        <div class="input-container">
+            <input type="text" id="distrito" class="input-box" placeholder="Distrito">
+        </div>
+        <div class="input-container">
+            <input type="text" id="avenida" class="input-box" placeholder="Avenida">
+        </div>
+        <div class="input-container">
+            <input type="text" id="codigoPostal" class="input-box" placeholder="Código Postal">
+        </div>
+    </div>
+    <div class="button-container">
+        <button id="btnListo" class="input-button" disabled>Listo</button>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<footer>
+    <div class="cuerpo-pie">
+        <div class="verdadero-pie">
+            <ul class="footer-menu-container">        
+                <li> <i class="fa-brands fa-facebook" style="color: #3b2b2b;"></i>DEVIL STREET</li>
+                <li><i class="fa-brands fa-instagram" style="color: #3b2b2b;"></i>DEVIL STREET</li>
+                <li><i class="fa-brands fa-whatsapp" style="color: #3b2b2b;"></i>981752502 - 967241204</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var btnListo = document.getElementById('btnListo');
+    var provinciaInput = document.getElementById('provincia');
+    var distritoInput = document.getElementById('distrito');
+    var avenidaInput = document.getElementById('avenida');
+    var codigoPostalInput = document.getElementById('codigoPostal');
+
+    function checkInputs() {
+        if (
+            provinciaInput.value.trim() !== '' &&
+            distritoInput.value.trim() !== '' &&
+            avenidaInput.value.trim() !== '' &&
+            codigoPostalInput.value.trim() !== ''
+        ) {
+            btnListo.disabled = false;
+        } else {
+            btnListo.disabled = true;
+        }
+    }
+
+    btnListo.addEventListener('click', function() {
+        alert('Registro exitoso');
+
+        // Limpia los campos después de un registro exitoso
+        provinciaInput.value = '';
+        distritoInput.value = '';
+        avenidaInput.value = '';
+        codigoPostalInput.value = '';
+
+        // Desactiva el botón después de un registro exitoso
+        btnListo.disabled = true;
+    });
+
+    // Agrega la lógica de activación/desactivación del botón en cada cambio de entrada
+    provinciaInput.addEventListener('input', checkInputs);
+    distritoInput.addEventListener('input', checkInputs);
+    avenidaInput.addEventListener('input', checkInputs);
+    codigoPostalInput.addEventListener('input', checkInputs);
+</script>
+</body>
+</html>
