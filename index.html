@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEVIL STREET</title>
+    <link rel="stylesheet" href="stilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src=""></script>
+</head>
+<body>
+    <header>
+        <div class="lista">
+            <a href="index.html" class="logo">
+                <img src="img/logo principal.png" width="160px">
+            </a>
+            <nav class="navbar">
+                <a href="">Nosotros</a>
+                <a href="catalogo.html">Catalogo</a>
+            </nav>
+            <div class="buscador">
+                <input type="text" id="search" placeholder="Busca en Devil Street">
+                <button onclick="buscar()">Buscar</button>
+            </div>
+            <nav class="opciones">
+                <a href="delivery.html">Delivery</a>
+                <a href="registrar.html">Registrate</a>
+            </nav>
+            <nav class="favoritos">
+                <a href=""><i class="fa-solid fa-heart" style="color: yellow"></i></a>
+            </nav>
+        </div>
+    </header>
+    <section class="ofertas">
+            <h1>SOMOS DEVIL STREET</h1>
+            <p class="p_vo">¡Bienvenido@ a DEVIL STREET<br>
+            </p>
+        <div class="slider" x-data="{start: true, end: false}" style="padding-top: 150px;">
+            <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+              <div class="slider__item">
+                <img class="slider__image" src="img/img 1.jpg" alt="">
+                <div class="slider__info">
+                  <h2>Comprar</h2>
+                </div>
+              </div>
+              <div class="slider__item">
+                <img class="slider__image" src="img/img 2.jpg" alt="">
+                <div class="slider__info">
+                  <h2>Comprar</h2>
+                </div>
+              </div>
+              <div class="slider__item">
+                <img class="slider__image" src="img/img 3.jpg" alt="">
+                <div class="slider__info">
+                  <h2>Comprar</h2>
+                </div>
+              </div>
+              <div class="slider__item">
+                <img class="slider__image" src="img/img 4.jpg" alt="">
+                <div class="slider__info">
+                  <h2>Comprar</h2>
+                </div>
+              </div>
+              <div class="slider__item">
+                <img class="slider__image" src="img/img 5.jpg" alt="">
+                <div class="slider__info">
+                  <h2>Comprar</h2>
+                </div>
+              </div>
+              <div class="slider__item">
+                <img class="slider__image" src="" alt="">
+                <div class="slider__info">
+                  <h2>Comprar</h2>
+                </div>
+              </div>
+              <div class="slider__item">
+                <img class="slider__image" src="" alt="">
+                <div class="slider__info">
+                  <h2>Comprar</h2>
+                </div>
+              </div>
+              <div class="slider__item">
+                <img class="slider__image" src="" alt="">
+                <div class="slider__info">
+                  <h2>Comprar</h2>
+                </div>
+              </div>
+              <div class="slider__item">
+                <img class="slider__image" src="" alt="">
+                <div class="slider__info">
+                  <h2>Comprar</h2>
+                </div>
+              </div>
+              <div class="slider__item">
+                <img class="slider__image" src="" alt="">
+                <div class="slider__info">
+                  <h2>Comprar</h2>
+                </div>
+              </div>
+            </div>
+            <div class="slider__nav" style="display: flex;justify-content: center;">
+              <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Antes</button>
+              <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Siguiente</button>
+            </div>
+          </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js"></script>
+    </section>
+    <div class="carrito">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="contador">0</span>
+    </div>
+  <footer>
+    <div class="section">
+      <h2 class="dir">Dirección<i class="fa-solid fa-location-dot fa-xl" style="color: #ff0000;"></i></h2>
+      <p>Calendulas , 1654, SJL, Lima, Perú.</p><br>
+    </div>
+
+    <div class="section">
+      <h2 class="cor">Correo<i class="fa-regular fa-envelope fa-xl"></i></i></h2>
+      <p>devilstreet@gmail.com</p><br>
+    </div>
+
+    <div class="section">
+      <h2 class="tel">Telefono</h2>
+      <p>912 683 423</p>
+      <a class="a" href=""><i class="fa-brands fa-whatsapp fa-xl" style="color: #0cad01;"></i></a><br>
+    </div>
+
+    <div class="section">
+      <h2 class="rs">Redes Sociales</h2>
+     <a class="a" href=""><i class="fa-brands fa-facebook fa-xl" style="color: #0d54ce;"></i></a>
+     <a class="a" href=""><i class="fa-brands fa-instagram fa-xl" style="color: #fd9f1c;"></i></a>
+    </div> 
+  </footer>
+</body>
+</html>
