@@ -17,6 +17,7 @@ body{
   display: flex;
   font-size: 18px;
   align-items: center;
+  
 }
 .navbar{
   margin-left: 150px;
@@ -25,10 +26,11 @@ body{
   text-decoration: none;
   color: #fff;
   padding: 9px 30px;
+  
     
 }
 .navbar a:hover{
-  background-color: yellow;
+  background-color: rgb(245, 207, 59);
   color: black;
   border-radius: 5px;
 }
@@ -42,7 +44,7 @@ body{
   margin-right: 9px !important; 
 }
 .opciones a:hover{
-  background-color: yellow;
+  background-color: rgb(245, 207, 59);
   color: black;
   border-radius: 5px;
 }
@@ -61,7 +63,7 @@ input[type="text"] {
   outline: none;
 }
 button {
-  background-color: yellow;
+  background-color: rgb(245, 207, 59);
   color: black;
   border: none;
   border-radius: 5px;
@@ -70,7 +72,8 @@ button {
   outline: none;
 }
 button:hover {
-  background-color: #d6f658;
+  font-size: 20px;
+  color: #fff;
 }
 /* Agregar estilos de navegación móvil */
 
@@ -91,7 +94,7 @@ h1{
 }
 .ofertas{
   padding: 18px;
-  background-color: yellow;
+  background-color: rgb(245, 207, 59);
   background-image: url(img/fondo\ index.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -139,7 +142,8 @@ h1{
         overflow: hidden;
         position: relative;
         aspect-ratio: 1;
-        background-color: yellow;
+
+        background-color: #203239;
       }
       @media (min-width: 460px) {
         .slider__item {
@@ -163,10 +167,10 @@ h1{
       .slider__info {
         position: relative;
         padding: 2rem ;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(32, 50, 57, 0));
+      
       }
       .slider__info h2 {
-        color: black;
+        color: rgb(255, 255, 255);
         font-family: system-ui;
         line-height: 1.1;
         font-weight: 500;
@@ -205,13 +209,12 @@ h1{
         appearance: none;
         border: 0;
         border-radius: 2rem;
-        background: yellow;
-        color: #203239;
+        background: #203239;
+        color: #ffffff;
         padding: 0.5rem 3rem;
-        font-size: 0.75rem;
         line-height: 1;
         pointer-events: none;
-        transition: 0.2s ease-out;
+        transition: 0.1s ease-out;
         opacity: 0.25;
       }
       .slider__nav__button--active {
@@ -223,7 +226,7 @@ h1{
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: yellow;
+  background-color: rgb(245, 207, 59);
   color: #203239;
   padding: 10px;
   border-radius: 50%;
@@ -234,7 +237,7 @@ h1{
 
 .contador {
   background-color: #203239;
-  color: yellow;
+  color: rgb(245, 207, 59);
   border-radius: 50%;
   padding: 2px 6px;
   font-size: 16px;
@@ -245,7 +248,7 @@ h1{
 
 footer{
   padding: 40px;
-  background-color: yellow;
+  background-color: rgb(245, 207, 59);
   color: black;
 }
 .section {
