@@ -35,7 +35,10 @@
             <input type="text" id="avenida" class="input-box" placeholder="Avenida">
         </div>
         <div class="input-container">
-            <input type="text" id="codigoPostal" class="input-box" placeholder="Código Postal">
+            <input type="text" id="codigoPostal" class="input-box" placeholder="Telefono">
+        </div>
+        <div class="input-container">
+            <input type="text" id="telefono" class="input-box" placeholder="Código Postal">
         </div>
     </div>
     <div class="button-container">
@@ -62,6 +65,7 @@
     var provinciaInput = document.getElementById('provincia');
     var distritoInput = document.getElementById('distrito');
     var avenidaInput = document.getElementById('avenida');
+    var telefonoInput = document.getElementById('telefono');
     var codigoPostalInput = document.getElementById('codigoPostal');
 
     function checkInputs() {
@@ -69,6 +73,7 @@
             provinciaInput.value.trim() !== '' &&
             distritoInput.value.trim() !== '' &&
             avenidaInput.value.trim() !== '' &&
+            telefonoInput.value.trim() !== '' &&
             codigoPostalInput.value.trim() !== ''
         ) {
             btnListo.disabled = false;
@@ -84,6 +89,7 @@
         provinciaInput.value = '';
         distritoInput.value = '';
         avenidaInput.value = '';
+        telefonoInput.value = '';
         codigoPostalInput.value = '';
 
         // Desactiva el botón después de un registro exitoso
@@ -94,6 +100,7 @@
     provinciaInput.addEventListener('input', checkInputs);
     distritoInput.addEventListener('input', checkInputs);
     avenidaInput.addEventListener('input', checkInputs);
+    telefonoInput.addEventListener('input', checkInputs);
     codigoPostalInput.addEventListener('input', checkInputs);
 </script>
 </body>
