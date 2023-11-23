@@ -1,0 +1,105 @@
+  <!doctype html>            
+  <html lang="en">
+  <head>
+    <title>Zona Gamer</title>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="R.css">
+  </head>
+  <body>
+    <script>
+      document.getElementById('myForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // Evita que se envíe el formulario
+      
+      // Obtiene los valores del formulario
+      var nombre = document.getElementById('nombre').value;
+      var email = document.getElementById('email').value;
+      var telefono = document.getElementById('telefono').value;
+      var genero = document.querySelector('input[name="genero"]:checked').value;
+      
+      // Crea una nueva fila en la tabla
+      var tableRef = document.getElementById('tablaRespuestas').getElementsByTagName('tbody')[0];
+      var newRow = tableRef.insertRow();
+      
+      // Inserta las celdas en la nueva fila
+      var newCell1 = newRow.insertCell(0);
+      var newCell2 = newRow.insertCell(1);
+      var newCell3 = newRow.insertCell(2);
+      var newCell4 = newRow.insertCell(3);
+      
+      // Agrega los valores del formulario a las celdas
+      newCell1.innerHTML = nombre;
+      newCell2.innerHTML = email;
+      newCell3.innerHTML = telefono;
+      newCell4.innerHTML = genero;
+      
+      // Reinicia los valores del formulario
+      document.getElementById('myForm').reset();
+    });
+    </script>
+    
+    <div class="section">
+      <div class="container">
+        <div class="row full-height justify-content-center">
+          <div class="col-12 text-center align-self-center py-5">
+            <div class="section pb-5 pt-5 pt-sm-2 text-center">
+              <h6 class="mb-0 pb-3"><span>Iniciar sesión</span><span>Registrate</span></h6>
+                    <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+                    <label for="reg-log"></label>
+              <div class="card-3d-wrap mx-auto">
+                <div class="card-3d-wrapper">
+                  <div class="card-front">
+                    <div class="center-wrap">
+                      <div class="section text-center">
+                        <h4 class="mb-4pb-3">Iniciar sesión</h4>
+                        <div class="form-group">
+                          <input type="email" class="form-style" placeholder="Correo">
+                          <i class="input-icon uil uil-at"></i>
+                        </div>	
+                        <div class="form-group mt-2">
+                          <input type="password" class="form-style" placeholder="Contraseña">
+                          <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                        <a href="index.html" class="btn mt-4">Inciar sesion</a>
+                        <p class="mb-0 mt-4 text-center"><a href="#" class="link">No te acuerdas tu contraseña?</a></p>
+                          </div>
+                        </div>
+                      </div>
+                  <div class="card-back">
+                    <div class="center-wrap">
+                      <div class="section text-center">
+                        <h4 class="mb-4pb-3">Registrate</h4>
+                        <div class="form-group">
+                          <input type="text" class="form-style" placeholder="Nombre completo">
+                          <i class="input-icon uil uil-user"></i>
+                        </div>	
+                        <div class="form-group mt-2">
+                          <input type="tel" class="form-style" placeholder="Numero de telefono">
+                          <i class="input-icon uil uil-phone"></i>
+                        </div>	
+                        <div class="form-group mt-2">
+                          <input type="email" class="form-style" placeholder="Correo">
+                          <i class="input-icon uil uil-at"></i>
+                        </div>
+                        <div class="form-group mt-2">
+                          <input type="password" class="form-style"  placeholder="Contraseña">
+                          <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                        <a href="#" class="btn mt-4">Registrar</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </body>
+  </html>
+
+    

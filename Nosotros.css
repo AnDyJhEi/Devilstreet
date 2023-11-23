@@ -1,0 +1,67 @@
+.tab-container {
+  display: flex;
+}
+.tab-left {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.tab-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 75%;
+}
+.tab-image {
+  width: 25%;
+  margin: 0 auto;
+  display: block;
+}
+.tab-social {
+  margin-top: 20px;
+}
+.tab-text {
+  margin-top: 20px;
+  margin-right: 20%;
+}
+.tab-subsection {
+  flex: 1;
+  padding: 20px;
+}
+@font-face {
+  font-family:"mi fuente" ;
+  src: url(fuentes/Curse\ of\ the\ Zombie.ttf) format(truetype);
+}
+
+h1{
+  font-family:'mi fuente',Arial, sans-serif;
+  font-size: 76px;
+  color: yellow;
+}
+
+@font-face {
+  font-family: "otra fuente";
+  src: url(fuentes/AmazDooMLeft.ttf)format(truetype);
+}
+
+.tab-text{
+  font-family:'otra fuente',Arial, sans-serif;
+  font-size: 40px;
+  color: white;
+}
+@font-face {
+  font-family: "fuente link";
+  src: url(fuentes/CALIFORNIA\ PERSONAL\ USE.ttf)format(truetype);
+}
+.tab-link{
+  font-family:"fuente link",Arial,sans-serif;
+  font-size:40px;
+  margin-top:-5%;
+  color: white;
+}
+.tab-social ul li a{
+font-size: 20PX;
+text-decoration:solid;
+color: white;
+}
