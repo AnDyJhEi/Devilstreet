@@ -1,130 +1,66 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo</title>
-    <link rel="stylesheet" href="cata.css">
+    <title>DEVIL STREET</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="catalogo.css">
 </head>
 <body>
-    <header>
-        <h1>NUESTRO CATALOGO</h1>
-
-        <div class="container-icon">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="icon-cart"
-            >
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-                />
-            </svg>
-            <div class="count-products">
-                <span id="contador-productos">0</span>
+    <div class="wrapper">
+        <header class="header-mobile">
+            <div class="logo">
+                <img src="./img/logo.png" width="180px">
             </div>
-
-            <div class="container-cart-products hidden-cart">
-                <div class="cart-product">
-                    <div class="info-cart-product">
-                        <span class="cantidad-producto-carrito">1</span>
-                        <p class="titulo-producto-carrito">Zapatos Nike</p>
-                        <span class="precio-producto-carrito">S/.80.00</span>
-                    </div>
-                    <svg
-                        xmlns="https://www.w3.org/TR/SVG/"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="icon-close"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M6 18L18 6M6 6l12 12"
-                        />
-                    </svg>
-                </div>
-                <div class="cart-total">
-                    <h3>Total:</h3>
-                    <span class="total-pagar">$200</span>
-                </div>
+            <button class="open-menu" id="open-menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="bi bi-x"></i>
+            </button>
+            <header>
+                <h1 class="logo"><img src="./img/logo.png" width="180px"></h1>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-fire"></i>Todos los Productos</button>
+                    </li>
+                    <li>
+                        <button id="polos" class="boton-menu boton-categoria"><i class="bi bi-fire"></i>Polos</button>
+                    </li>
+                    <li>
+                        <button id="pantalones" class="boton-menu boton-categoria"><i class="bi bi-fire"></i>Pantalones</button>
+                    </li>
+                    <li>
+                        <button id="poleras" class="boton-menu boton-categoria"><i class="bi bi-fire"></i>Poleras</button>
+                    </li>
+                    <li>
+                        <button id="zapatillas" class="boton-menu boton-categoria"><i class="bi bi-fire"></i>Zapatillas</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="carrito.html">
+                            <i class="bi bi-cart-plus"></i> Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2023 Devil Street</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los Productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                
             </div>
-        </div>
-    </header>
-    <div class="container-items">
-        <div class="item">
-            <figure>
-                <img
-                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>Zapatos Nike</h2>
-                <p class="price">S/200.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="img/POLO01.png"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>Polo Básico</h2>
-                <p class="price">S/30.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img
-                src="img/POLO02.png"
-                alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>Polo Básico Nro2</h2>
-                <p class="price">S/30.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="img/POLO03.png"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>Polo basico Nro3</h2>
-                <p class="price">S/30.00</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </div>
-        <div class="item">
-            <figure>
-                <img
-                    src="img/POLO04.png"
-                    alt="producto"
-                />
-            </figure>
-            <div class="info-product">
-                <h2>Polo Básico Nro4</h2>
-                <p class="price">S/30.00</p>
-                <button>Añadir al carrito</button>
-        </div>
+        </main>
     </div>
-
-    <script src="index.js"></script>  
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="main.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>

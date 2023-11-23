@@ -65,3 +65,19 @@ font-size: 20PX;
 text-decoration:solid;
 color: white;
 }
+.d_regreso{
+  padding: 30px;
+  text-align: center;
+  background-color: black;
+}
+
+.regreso{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: yellow;
+  font-size: 17px;
+}
+.regreso:hover{
+  border: 1px solid yellow;
+  border-radius: 10px;
+}

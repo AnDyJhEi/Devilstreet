@@ -1,0 +1,180 @@
+[
+    {
+        "id": "polo-01",
+        "titulo": "Polo 01",
+        "imagen": "./img/polos/img 01.jpg",
+        "categoria": {
+            "nombre": "Polos",
+            "id": "polos"
+        },
+        "precio": 50.00
+    },
+    {
+        "id": "polo-02",
+        "titulo": "Polo 02",
+        "imagen": "./img/polos/img 02.jpeg",
+        "categoria": {
+            "nombre": "Polos",
+            "id": "polos"
+        },
+        "precio": 50.00
+    },
+    {
+        "id": "polo-03",
+        "titulo": "Polo 03",
+        "imagen": "./img/polos/img 03.jpg",
+        "categoria": {
+            "nombre": "Polos",
+            "id": "polos"
+        },
+        "precio": 50.00
+    },
+    {
+        "id": "polo-04",
+        "titulo": "Polo 04",
+        "imagen": "./img/polos/img 04.jpg",
+        "categoria": {
+            "nombre": "Polos",
+           "id": "polos"
+        },
+        "precio": 50.00
+    },
+    {
+        "id": "polo-05",
+        "titulo": "Polo 05",
+        "imagen": "./img/polos/img 05.png",
+        "categoria": {
+            "nombre": "Polos",
+            "id": "polos"
+        },
+        "precio": 50.00
+    },
+    
+
+    {
+        "id": "pantalon-01",
+        "titulo": "Pantalón 01",
+        "imagen": "./img/pantalones/img 01.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 80.00
+    },
+    {
+        "id": "pantalon-02",
+        "titulo": "Pantalón 02",
+        "imagen": "./img/pantalones/img 02.jpeg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 80.00
+    },
+    {
+        "id": "pantalon-03",
+        "titulo": "Pantalón 03",
+        "imagen": "./img/pantalones/img 03.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 80.00
+    },
+    {
+        "id": "pantalon-04",
+        "titulo": "Pantalón 04",
+        "imagen": "./img/pantalones/img 04.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 80.00
+    },
+    
+    
+
+    {
+        "id": "polera-01",
+        "titulo": "Polera 01",
+        "imagen": "./img/poleras/img 01.jpg",
+        "categoria": {
+            "nombre": "Poleras",
+            "id": "poleras"
+        },
+        "precio": 70.00
+    },
+    {
+        "id": "polera-02",
+        "titulo": "Polera 02",
+        "imagen": "./img/poleras/img 02.jpg",
+        "categoria": {
+            "nombre": "Poleras",
+            "id": "poleras"
+        },
+        "precio": 70.00
+    },
+    {
+        "id": "polera-03",
+        "titulo": "Polera 03",
+        "imagen": "./img/poleras/img 03.jpg",
+        "categoria": {
+            "nombre": "Poleras",
+            "id": "poleras"
+        },
+        "precio": 70.00
+    },
+    {
+        "id": "polera-04",
+        "titulo": "Polera 04",
+        "imagen": "./img/poleras/img 04.jpg",
+        "categoria": {
+            "nombre": "Poleras",
+            "id": "poleras"
+        },
+        "precio": 70.00
+    },
+    
+
+    {
+        "id": "zapatilla-01",
+        "titulo": "Zapatilla 01",
+        "imagen": "./img/zapatillas/img 01.jpeg",
+        "categoria": {
+            "nombre": "Zapatillas",
+            "id": "zapatillas"
+        },
+        "precio": 100.00
+    },
+    {
+        "id": "zapatilla-02",
+        "titulo": "Zapatilla 02",
+        "imagen": "./img/zapatillas/img 02.jpg",
+        "categoria": {
+            "nombre": "Zapatillas",
+            "id": "zapatillas"
+        },
+        "precio": 100.00
+    },
+    {
+        "id": "zapatilla-03",
+        "titulo": "Zapatilla 03",
+        "imagen": "./img/zapatillas/img 03.jpg",
+        "categoria": {
+            "nombre": "Zapatillas",
+            "id": "zapatillas"
+        },
+        "precio": 100.00
+    },
+    {
+        "id": "zapatilla-04",
+        "titulo": "Zapatilla 04",
+        "imagen": "./img/zapatillas/img 04.jpeg",
+        "categoria": {
+            "nombre": "Zapatillas",
+            "id": "zapatillas"
+        },
+        "precio": 100.00
+    }
+    
+]
